@@ -20,6 +20,12 @@ Informações de estilo:
     0 - Estilo do projeto é "BLUEPRINT": Fundo azul rgb(0, 20, 132), texto branco rgb(230, 230, 230).
     1 - Projeto não deve apresentar gradientes de cores.
     2 - Para o tema blueprint, o fundo da página deve apresentar um quadriculado branco apagado rgb(150, 150, 150) simples.
+    3 - Código da fonte a ser utilizado (inserido no HEAD):
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    4 - Cards de apresntação não podem conter fundo translucido, devem ter borda completamente branca e um leve "border radius"
 
 Diretrizes:
 
