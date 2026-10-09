@@ -17,10 +17,22 @@
     <link rel="stylesheet" href="style.css" />
     <script src="scripts/main.js" defer></script>
   </head>
-  <body>
+  <body data-theme="dark">
     <div class="page-shell">
       <header class="hero card">
-        <p class="eyebrow">Apresentação</p>
+        <div class="topbar">
+          <p class="eyebrow">Apresentação</p>
+
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Alternar entre tema claro e escuro"
+            aria-pressed="true"
+          >
+            <span class="toggle-label">Tema claro</span>
+          </button>
+        </div>
+
         <h1>Henrique Reinaldi</h1>
         <p class="lead">Sou um aluno de CIÊNCIA DA COMPUTAÇÃO e participo do ACZG!</p>
       </header>

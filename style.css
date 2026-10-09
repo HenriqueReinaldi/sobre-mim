@@ -1,8 +1,29 @@
 :root {
-  --blue-900: rgb(0, 20, 132);
-  --blue-800: rgb(17, 35, 157);
+  --page-bg: rgb(0, 20, 132);
+  --grid-color: rgba(150, 150, 150, 0.18);
+  --panel-bg: transparent;
+  --panel-border: rgb(255, 255, 255);
   --text-main: rgb(230, 230, 230);
-  --line-soft: rgba(255, 255, 255, 1);
+  --text-soft: rgba(230, 230, 230, 0.82);
+  --link-color: rgb(230, 230, 230);
+  --button-bg: rgba(255, 255, 255, 0.06);
+  --button-border: rgba(255, 255, 255, 0.8);
+  --button-text: rgb(230, 230, 230);
+  --overlay: rgba(0, 0, 0, 0.08);
+}
+
+body[data-theme='light'] {
+  --page-bg: rgb(244, 247, 255);
+  --grid-color: rgba(17, 35, 157, 0.12);
+  --panel-bg: rgb(255, 255, 255);
+  --panel-border: rgba(17, 35, 157, 0.8);
+  --text-main: rgb(17, 35, 157);
+  --text-soft: rgba(17, 35, 157, 0.8);
+  --link-color: rgb(17, 35, 157);
+  --button-bg: rgb(255, 255, 255);
+  --button-border: rgba(17, 35, 157, 0.8);
+  --button-text: rgb(17, 35, 157);
+  --overlay: rgba(17, 35, 157, 0.08);
 }
 
 * {
@@ -17,19 +38,20 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: 'Inter', 'Google Sans', sans-serif;
-  background-color: var(--blue-900);
+  background-color: var(--page-bg);
   color: var(--text-main);
   background-image:
-    linear-gradient(rgba(150, 150, 150, 0.18) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(150, 150, 150, 0.18) 1px, transparent 1px);
+    linear-gradient(var(--grid-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
   background-size: 28px 28px;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.08);
+  background: var(--overlay);
   pointer-events: none;
 }
 
@@ -41,23 +63,61 @@ body::before {
 }
 
 .card {
-  background: transparent;
-  border: 1px solid var(--line-soft);
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
   border-radius: 12px;
   padding: 24px 28px;
   box-shadow: none;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
 }
 
 .hero {
   margin-bottom: 24px;
 }
 
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
 .eyebrow {
-  margin: 0 0 12px;
+  margin: 0;
   font-size: 0.95rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   opacity: 0.8;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--button-border);
+  background: var(--button-bg);
+  color: var(--button-text);
+  font: inherit;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  transform: translateY(-1px);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--text-main);
+  outline-offset: 2px;
+}
+
+.toggle-label {
+  font-size: 0.95rem;
+  font-weight: 600;
 }
 
 h1,
@@ -76,20 +136,20 @@ h1 {
 
 h2 {
   margin-bottom: 14px;
-  font-size: 2.1rem;
+  font-size: clamp(1.8rem, 4vw, 2.2rem);
   font-family: 'Google Sans', 'Inter', sans-serif;
 }
 
 p,
 li,
 a {
-  font-size: 1.45rem;
+  font-size: clamp(1.1rem, 2.5vw, 1.45rem);
   line-height: 1.5;
 }
 
 .lead {
   margin-bottom: 0;
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 2.8vw, 1.5rem);
 }
 
 main {
@@ -103,7 +163,7 @@ main {
 }
 
 a {
-  color: var(--text-main);
+  color: var(--link-color);
   text-decoration: underline;
   text-underline-offset: 0.18em;
 }
@@ -118,7 +178,31 @@ a {
     padding: 18px 18px;
   }
 
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .theme-toggle {
+    align-self: flex-end;
+  }
+
   h1 {
     line-height: 1.05;
+  }
+}
+
+@media (max-width: 420px) {
+  .page-shell {
+    width: min(100% - 16px, 900px);
+  }
+
+  .card {
+    padding: 16px 16px;
+  }
+
+  .theme-toggle {
+    width: 100%;
+    justify-content: center;
   }
 }

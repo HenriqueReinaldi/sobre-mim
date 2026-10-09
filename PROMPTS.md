@@ -38,3 +38,13 @@
 - Manter o tema visual "BLUEPRINT" sem gradientes
 - Aplicar cards com borda branca completa e leve border radius
 - Ajustar o visual do projeto de acordo com as orientações do arquivo de informações
+
+## Comando 4
+
+> Continue o desenvolvimento do projeto, seguindo os requisitos opcionais 6 e 7. 
+
+### Ajustes solicitados
+- Tornar a página responsiva para manter boa visualização em celulares, tablets e telas maiores
+- Adicionar um botão para alternar entre tema claro e escuro
+- Preservar o tema visual "BLUEPRINT" e o conteúdo textual fiel às informações do documento
+- Registrar o comando no arquivo de prompts de forma formatada

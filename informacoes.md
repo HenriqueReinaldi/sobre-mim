@@ -26,6 +26,7 @@ Informações de estilo:
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     4 - Cards de apresntação não podem conter fundo translucido, devem ter borda completamente branca e um leve "border radius"
+    5 - Emojis estão estritamente proibídos.
 
 Diretrizes:
 
@@ -61,7 +62,7 @@ Requisitos obrigatórios:
 
 Requisitos opicionais:
 
-    6 - Página deve ser responsiva
+    6 - Página deve ser responsiva (manter boa visualização independente de formato: celular, tablet, widescreens...)
 
     7 - Adicionar um botão para alternar entre tema claro e escuro
 
