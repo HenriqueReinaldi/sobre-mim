@@ -48,3 +48,22 @@
 - Adicionar um botão para alternar entre tema claro e escuro
 - Preservar o tema visual "BLUEPRINT" e o conteúdo textual fiel às informações do documento
 - Registrar o comando no arquivo de prompts de forma formatada
+
+## Comando 5
+
+> Siga os requisitos opcionais 8 e 9 do documento de informações.
+
+### Ajustes solicitados
+- Criar uma seção "Projetos" com cards contendo a descrição e a tecnologia principal de cada projeto
+- Incluir links para os repositórios dos projetos listados
+- Adicionar um favicon para a página
+- Aplicar uma animação suave ao carregar a página
+- Manter o tema visual "BLUEPRINT" e as demais diretrizes do projeto
+
+## Comando 6
+
+> Com base no documento de informacoes, mova o arquivo favicon.svg para seu devido lugar
+
+### Ajustes solicitados
+- Mover o favicon para o diretório de assets definido na estrutura do projeto
+- Atualizar a referência do favicon na página principal

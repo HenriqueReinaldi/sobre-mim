@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
     <link rel="stylesheet" href="style.css" />
     <script src="scripts/main.js" defer></script>
   </head>
@@ -37,8 +38,8 @@
         <p class="lead">Sou um aluno de CIÊNCIA DA COMPUTAÇÃO e participo do ACZG!</p>
       </header>
 
-      <main>
-        <section class="card">
+      <main class="content">
+        <section class="content-section card">
           <h2>Sobre</h2>
           <p>
             Minha área de interesse é a Ciência da Computação. Gosto de aprender sobre
@@ -47,7 +48,7 @@
           </p>
         </section>
 
-        <section class="card">
+        <section class="content-section card">
           <h2>Tecnologias que quero aprender</h2>
           <ul class="tech-list">
             <li>Docker</li>
@@ -56,13 +57,58 @@
           </ul>
         </section>
 
-        <section class="card">
+        <section class="content-section card">
           <h2>GitHub</h2>
           <p>
             <a href="https://github.com/henriquereinaldi" target="_blank" rel="noreferrer">
               github.com/henriquereinaldi
             </a>
           </p>
+        </section>
+
+        <section class="content-section card" aria-labelledby="projects-heading">
+          <h2 id="projects-heading">Projetos</h2>
+          <div class="project-list">
+            <article class="project-card">
+              <h3>
+                <a href="https://github.com/HenriqueReinaldi/Linketinder-Project" target="_blank" rel="noreferrer">
+                  Linketinder-Project
+                </a>
+              </h3>
+              <p>Um aplicativo de contratação às cegas.</p>
+              <p><strong>Tecnologia principal:</strong> Groovy</p>
+            </article>
+
+            <article class="project-card">
+              <h3>
+                <a href="https://github.com/HenriqueReinaldi/TODO-list" target="_blank" rel="noreferrer">
+                  TODO-list
+                </a>
+              </h3>
+              <p>Ninguem nunca viu uma lista de tarefas melhor.</p>
+              <p><strong>Tecnologia principal:</strong> Java</p>
+            </article>
+
+            <article class="project-card">
+              <h3>
+                <a href="https://github.com/HenriqF/java-encurtador" target="_blank" rel="noreferrer">
+                  java-encurtador
+                </a>
+              </h3>
+              <p>O melhor encurtador de links do planeta.</p>
+              <p><strong>Tecnologia principal:</strong> Java</p>
+            </article>
+
+            <article class="project-card">
+              <h3>
+                <a href="https://github.com/HenriqF/c-hashmap" target="_blank" rel="noreferrer">
+                  c-hashmap
+                </a>
+              </h3>
+              <p>Hashmap simples base para C.</p>
+              <p><strong>Tecnologia principal:</strong> C</p>
+            </article>
+          </div>
         </section>
       </main>
     </div>

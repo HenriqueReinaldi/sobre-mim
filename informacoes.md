@@ -12,6 +12,8 @@ Estrutura de arquivos:
     style.css -> estilos 
     scripts/
         <nome>.js -> scripts necessários 
+    assets/
+        <nome>.<tipo> -> qualquer asset (icones, jsons, imagens) necessárias
     informacoes.md -> documento com as informações gerais do projeto
     PROMPTS.md -> registro dos comandos enviados ao agente de IA
 
