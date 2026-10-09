@@ -21,9 +21,13 @@ Informações de estilo:
     1 - Projeto não deve apresentar gradientes de cores.
     2 - Para o tema blueprint, o fundo da página deve apresentar um quadriculado branco simples.
 
+Diretrizes:
+
+    0 - O conteúdo de texto apresentado deve seguir de maneira estrita aquilo que é dado como "informação". 
+
 Requisitos obrigatórios: 
 
-    0 - Inclua todos os comandos enviados ao agente de IA no arquivo PROMPTS.md. O resultado final deve estar bem formatado.
+    0 - Inclua todos os comandos diretamente enviados ao agente de IA no arquivo PROMPTS.md. O resultado final deve estar bem formatado.
 
     1 - A página deve incluir um nome e uma apresentação.
       Informações:
@@ -33,7 +37,8 @@ Requisitos obrigatórios:
 
     2 - Uma seção "Sobre" com 2 ou 3 linhas sobre sua área de interesse
       Informações:
-            area de interesse: Ciência da computação, sistemas backend
+            area de interesse: Ciência da computação
+            tom: leve, sem exageros.
 
     3 - Uma lista com 3 tecnologias que você quer aprender
       Informações:
@@ -45,9 +50,7 @@ Requisitos obrigatórios:
     4 - Um link para o seu perfil do GitHub
       Informações:
             https://github.com/henriquereinaldi
-            https://github.com/henriquefreinaldi
-            https://github.com/henriqf
-            
+
     5 - CSS deve estar em um arquivo separado `style.css`
 
 Requisitos opicionais:
