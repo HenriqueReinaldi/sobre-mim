@@ -1,0 +1,135 @@
+:root {
+  --blue-900: rgb(0, 20, 132);
+  --blue-800: rgb(17, 35, 157);
+  --text-main: rgb(230, 230, 230);
+  --line-soft: rgba(255, 255, 255, 0.28);
+  --panel: rgba(255, 255, 255, 0.05);
+  --panel-strong: rgba(255, 255, 255, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--blue-900);
+  color: var(--text-main);
+  background-image:
+    linear-gradient(rgba(150, 150, 150, 0.18) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(150, 150, 150, 0.18) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.08);
+  pointer-events: none;
+}
+
+.page-shell {
+  position: relative;
+  z-index: 1;
+  width: min(900px, calc(100% - 32px));
+  margin: 48px auto;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--line-soft);
+  border-radius: 14px;
+  padding: 24px 28px;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+
+.hero {
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+h1,
+h2,
+p,
+ul {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+}
+
+h2 {
+  margin-bottom: 14px;
+  font-size: 1.5rem;
+}
+
+p,
+li,
+a {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.lead {
+  margin-bottom: 0;
+  font-size: 1.1rem;
+}
+
+main {
+  display: grid;
+  gap: 20px;
+}
+
+.tech-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+a {
+  color: var(--text-main);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.footer {
+  margin-top: 24px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .page-shell {
+    width: min(100% - 20px, 900px);
+    margin: 20px auto;
+  }
+
+  .card {
+    padding: 18px 18px;
+    border-radius: 10px;
+  }
+
+  h1 {
+    line-height: 1.12;
+  }
+}

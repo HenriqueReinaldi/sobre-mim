@@ -17,9 +17,9 @@ Estrutura de arquivos:
 
 Informações de estilo:
 
-    0 - Estilo do projeto é "BLUEPRINT": Fundo azul, texto branco.
+    0 - Estilo do projeto é "BLUEPRINT": Fundo azul rgb(0, 20, 132), texto branco rgb(230, 230, 230).
     1 - Projeto não deve apresentar gradientes de cores.
-    2 - Para o tema blueprint, o fundo da página deve apresentar um quadriculado branco simples.
+    2 - Para o tema blueprint, o fundo da página deve apresentar um quadriculado branco apagado rgb(150, 150, 150) simples.
 
 Diretrizes:
 
